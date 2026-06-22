@@ -15,15 +15,15 @@
             <ModelOffset x="0" y="0" z="0" />
             <Model>Models\Cubes\Large\CargoContainerSmall.mwm</Model>
             <Components>
-                <Component Subtype="InteriorPlate" Count="30" />
-                <Component Subtype="Construction" Count="35" />
-                <Component Subtype="MetalGrid" Count="4" />
-                <Component Subtype="SmallTube" Count="20" />
-                <Component Subtype="Motor" Count="4" />
-                <Component Subtype="Display" Count="1" />
-                <Component Subtype="Computer" Count="2" />
-                <Component Subtype="Construction" Count="5" />
-                <Component Subtype="InteriorPlate" Count="10" />
+                <Component Subtype="InteriorPlate" Count="150" />
+                <Component Subtype="Construction" Count="175" />
+                <Component Subtype="MetalGrid" Count="20" />
+                <Component Subtype="SmallTube" Count="100" />
+                <Component Subtype="Motor" Count="20" />
+                <Component Subtype="Display" Count="5" />
+                <Component Subtype="Computer" Count="10" />
+                <Component Subtype="Construction" Count="25" />
+                <Component Subtype="InteriorPlate" Count="50" />
             </Components>
             <CriticalComponent Subtype="Computer" Index="0" />
             <MountPoints>
@@ -66,15 +66,38 @@
             <ModelOffset x="0" y="0" z="0" />
             <Model>Models\Cubes\Large\CargoContainerLarge.mwm</Model>
             <Components>
-                <Component Subtype="InteriorPlate" Count="300" />
-                <Component Subtype="Construction" Count="60" />
-                <Component Subtype="MetalGrid" Count="24" />
-                <Component Subtype="SmallTube" Count="60" />
-                <Component Subtype="Motor" Count="20" />
-                <Component Subtype="Display" Count="1" />
-                <Component Subtype="Computer" Count="8" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="InteriorPlate" Count="60" />
+                <Component Subtype="AlienConstructionKit" Count="150">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="PrototechPanel" Count="3000" />
+                <Component Subtype="Construction" Count="600" />
+                <Component Subtype="MetalGrid" Count="240" />
+                <Component Subtype="SmallTube" Count="600" />
+                <Component Subtype="PrototechMachinery" Count="75">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="PrototechCoolingUnit" Count="80">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Display" Count="10" />
+                <Component Subtype="Computer" Count="80" />
+                <Component Subtype="PrototechCircuitry" Count="20">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="Construction" Count="200" />
+                <Component Subtype="PrototechPanel" Count="600" />
             </Components>
             <CriticalComponent Subtype="Computer" Index="0" />
             <MountPoints>

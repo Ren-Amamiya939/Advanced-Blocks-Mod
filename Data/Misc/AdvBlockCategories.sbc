@@ -54,7 +54,6 @@
                 <string>SmallMissileLauncher/LargeBlockLargeCalibreGun</string>
                 <string>SmallMissileLauncher/LargeFlareLauncher</string>
                 <string>SmallMissileLauncher/SmallFlareLauncher</string>
-				<string>300mmAutocannon</string>
             </ItemIds>
         </Category>
 	</CategoryClasses>

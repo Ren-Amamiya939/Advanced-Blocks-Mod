@@ -13,7 +13,7 @@
                 <TypeId>Inventory</TypeId>
                 <SubtypeId>AdvCargoContainer</SubtypeId>
             </Id>
-            <Size x="12.5" y="12.5" z="12.5" />
+            <Size x="5" y="5" z="5" />
         </EntityComponent>
 	</EntityComponents>
 </Definitions>
