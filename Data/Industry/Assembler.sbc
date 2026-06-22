@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+            <Id>
+                <TypeId>Assembler</TypeId>
+                <SubtypeId>LargeAdvancedAssembler</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Assembler</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Prototech_Assembler.dds</Icon>
+            <Description>Description_PrototechAssembler</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="3" y="2" z="2" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\Prototech_Assembler.mwm</Model>
+            <Components>
+                <Component Subtype="AlienConstructionKit" Count="15">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="PrototechPanel" Count="240" />
+                <Component Subtype="Construction" Count="195" />
+                <Component Subtype="PrototechMachinery" Count="30">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="PrototechCoolingUnit" Count="3">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="MetalGrid" Count="120" />
+                <Component Subtype="Computer" Count="300" />
+                <Component Subtype="Display" Count="15" />
+                <Component Subtype="PrototechPanel" Count="120" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="0.2" />
+                <MountPoint Side="Back" StartX="1.3" StartY="0.3" EndX="2.9" EndY="0.9" />
+                <MountPoint Side="Back" StartX="0" StartY="1.9" EndX="3" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="1.2" EndX="0.1" EndY="1.9" />
+                <MountPoint Side="Back" StartX="2.9" StartY="1.2" EndX="3" EndY="1.9" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0.2" EndX="3" EndY="2" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="1" />
+                <MountPoint Side="Top" StartX="0.1" StartY="1" EndX="0.9" EndY="1.9" />
+                <MountPoint Side="Left" StartX="0.2" StartY="0" EndX="2" EndY="0.2" />
+                <MountPoint Side="Left" StartX="0.7" StartY="0.2" EndX="1" EndY="1.8" />
+                <MountPoint Side="Left" StartX="1" StartY="0.9" EndX="2" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1.8" EndY="0.2" />
+                <MountPoint Side="Right" StartX="0.1" StartY="0.2" EndX="1.2" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Right" StartX="1" StartY="1" EndX="1.3" EndY="1.8" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Prototech_Assembler_Construction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Prototech_Assembler_Construction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Prototech_Assembler_Construction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AdvancedAssembler</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>150</BuildTimeSeconds>
+            <DisassembleRatio>5</DisassembleRatio>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>12</InventoryMaxVolume>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>8</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>PrototechComponents</Class>
+                <Class>LargeBlocks</Class>
+                <Class>SmallBlocks</Class>
+                <Class>Components</Class>
+                <Class>EliteEquipment</Class>
+                <Class>EliteTools</Class>
+				<Class>EliteWeapons</Class>
+				<Class>EliteConsumables</Class>				
+                <Class>BuildPlanner</Class>
+            </BlueprintClasses>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <AssemblySpeed>2</AssemblySpeed>
+            <DamageEffectName>Damage_Electrical_Prototech_Assembler</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <PrimarySound>BlockAssembler</PrimarySound>
+            <ActionSound>BlockAssemblerProcess</ActionSound>
+            <IgnoreEfficiencyMultiplier>false</IgnoreEfficiencyMultiplier>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <PCU>40</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <AllowSelfPulling>true</AllowSelfPulling>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+            <Id>
+                <TypeId>Assembler</TypeId>
+                <SubtypeId>BasicAssembler</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_BasicAssembler</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\basicAssembler.dds</Icon>
+            <Description>Description_AssemblerBasic</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\BasicAssembler.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="60" />
+                <Component Subtype="Construction" Count="40" />
+                <Component Subtype="Motor" Count="10" />
+                <Component Subtype="Display" Count="4" />
+                <Component Subtype="Computer" Count="80" />
+                <Component Subtype="SteelPlate" Count="20" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\BasicAssembler_Construction1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\BasicAssembler_Construction2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\BasicAssembler_Construction3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>BasicAssembler</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>2</InventoryMaxVolume>
+            <InventorySize>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>1</Z>
+            </InventorySize>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>0.28</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>SimpleComponents</Class>
+                <Class>SimpleEquipment</Class>
+                <Class>Tools</Class>
+				<Class>SimpleWeapons</Class>
+				<Class>Consumables</Class>
+                <Class>BuildPlanner</Class>
+            </BlueprintClasses>
+            <AssemblySpeed>0.7</AssemblySpeed>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockAssembler</PrimarySound>
+            <ActionSound>BlockAssemblerProcess</ActionSound>
+            <DestroyEffect>Explosion_Missile</DestroyEffect>
+            <DestroySound>WepSmallMissileExpl</DestroySound>
+            <PCU>40</PCU>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <IsAirTight>true</IsAirTight>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+        </Definition>
+    </CubeBlocks>
+</Definitions>

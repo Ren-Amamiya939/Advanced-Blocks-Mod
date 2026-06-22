@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_AirVentDefinition">
+            <Id>
+                <TypeId>AirVent</TypeId>
+                <SubtypeId>AdvAirVent</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Air Vent</DisplayName>
+            <YesNoToolbarBackground>true</YesNoToolbarBackground>
+            <YesNoToolbarYesTooltip>YesNoToolbarTooltip_Airvent_Yes</YesNoToolbarYesTooltip>
+            <YesNoToolbarNoTooltip>YesNoToolbarTooltip_Airvent_No</YesNoToolbarNoTooltip>
+            <Icon>Textures\GUI\Icons\Cubes\AirVent.dds</Icon>
+            <Description>Description_AirVent</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\OxygenPressurizer.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Construction" Count="20" />
+                <Component Subtype="Motor" Count="10" />
+                <Component Subtype="Computer" Count="5" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\OxygenPressurizerConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\OxygenPressurizerConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\OxygenPressurizerConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AirVent</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.1</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <VentilationCapacityPerSecond>30000</VentilationCapacityPerSecond>
+
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <PressurizeSound>BlockAirVentExhale</PressurizeSound>
+            <DepressurizeSound>BlockAirVentDepressurize</DepressurizeSound>
+            <IdleSound>BlockAirVentIdle</IdleSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_AirVentDefinition">
+            <Id>
+                <TypeId>AirVent</TypeId>
+                <SubtypeId>AdvAirVentFull</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Air Vent Full</DisplayName>
+            <YesNoToolbarBackground>true</YesNoToolbarBackground>
+            <YesNoToolbarYesTooltip>YesNoToolbarTooltip_Airvent_Yes</YesNoToolbarYesTooltip>
+            <YesNoToolbarNoTooltip>YesNoToolbarTooltip_Airvent_No</YesNoToolbarNoTooltip>
+            <Icon>Textures\GUI\Icons\Cubes\OxygenPressurizerFullLarge.dds</Icon>
+            <Description>Description_AirVent</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\OxygenPressurizerFull.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="30" />
+                <Component Subtype="Construction" Count="30" />
+                <Component Subtype="Motor" Count="10" />
+                <Component Subtype="Computer" Count="5" />
+                <Component Subtype="SteelPlate" Count="15" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="0.2" />
+                <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="1" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="0.2" EndX="0.2" EndY="0.8" />
+                <MountPoint Side="Front" StartX="0.8" StartY="0.2" EndX="1" EndY="0.8" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\OxygenPressurizerFullConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\OxygenPressurizerFullConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\OxygenPressurizerFullConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AirventFull</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>25</BuildTimeSeconds>
+
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.1</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <VentilationCapacityPerSecond>30000</VentilationCapacityPerSecond>
+
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <PressurizeSound>BlockAirVentExhale</PressurizeSound>
+            <DepressurizeSound>BlockAirVentDepressurize</DepressurizeSound>
+            <IdleSound>BlockAirVentIdle</IdleSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+        </Definition>
+        <Definition xsi:type="MyObjectBuilder_AirVentDefinition">
+            <Id>
+                <TypeId>AirVent</TypeId>
+                <SubtypeId>AdvAirVentFan</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Air Vent Fan</DisplayName>
+            <YesNoToolbarBackground>true</YesNoToolbarBackground>
+            <YesNoToolbarYesTooltip>YesNoToolbarTooltip_Airvent_Yes</YesNoToolbarYesTooltip>
+            <YesNoToolbarNoTooltip>YesNoToolbarTooltip_Airvent_No</YesNoToolbarNoTooltip>
+            <Icon>Textures\GUI\Icons\Cubes\WallFanVentHalf.dds</Icon>
+            <Description>Description_AirVent</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\WallFanVentHalf.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="Construction" Count="20" />
+                <Component Subtype="Motor" Count="10" />
+                <Component Subtype="Computer" Count="5" />
+                <Component Subtype="SteelPlate" Count="10" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0.5" EndX="1" EndY="1" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Left" StartX="0.5" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.5" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="0.5" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\WallFanVentHalfConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\WallFanVentHalfConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WallFanVentHalfConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AirVentFan</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>20</BuildTimeSeconds>
+
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.1</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <VentilationCapacityPerSecond>30000</VentilationCapacityPerSecond>
+            <RotationSpeed>4</RotationSpeed>
+            <SpinUpSpeed>1</SpinUpSpeed>
+            <SpinDownSpeed>1</SpinDownSpeed>
+
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <PressurizeSound>BlockAirVentExhale</PressurizeSound>
+            <DepressurizeSound>BlockAirVentDepressurize</DepressurizeSound>
+            <IdleSound>BlockAirVentIdle</IdleSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+            <DLC>Automatons</DLC>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_AirVentDefinition">
+            <Id>
+                <TypeId>AirVent</TypeId>
+                <SubtypeId>AdvAirVentFanFull</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Air Vent Fan Full</DisplayName>
+            <YesNoToolbarBackground>true</YesNoToolbarBackground>
+            <YesNoToolbarYesTooltip>YesNoToolbarTooltip_Airvent_Yes</YesNoToolbarYesTooltip>
+            <YesNoToolbarNoTooltip>YesNoToolbarTooltip_Airvent_No</YesNoToolbarNoTooltip>
+            <Icon>Textures\GUI\Icons\Cubes\WallFanVent.dds</Icon>
+            <Description>Description_AirVent</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="1" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\WallFanVent.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="30" />
+                <Component Subtype="Construction" Count="30" />
+                <Component Subtype="Motor" Count="10" />
+                <Component Subtype="Computer" Count="5" />
+                <Component Subtype="SteelPlate" Count="15" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="0.2" />
+                <MountPoint Side="Front" StartX="0" StartY="0.8" EndX="1" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="0.2" EndX="0.2" EndY="0.8" />
+                <MountPoint Side="Front" StartX="0.8" StartY="0.2" EndX="1" EndY="0.8" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\WallFanVentConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\WallFanVentConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WallFanVentConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AirventFanFull</BlockPairName>
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>25</BuildTimeSeconds>
+
+            <ResourceSourceGroup>Battery</ResourceSourceGroup>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <OperationalPowerConsumption>0.1</OperationalPowerConsumption>
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <VentilationCapacityPerSecond>30000</VentilationCapacityPerSecond>
+            <RotationSpeed>4</RotationSpeed>
+            <SpinUpSpeed>1</SpinUpSpeed>
+            <SpinDownSpeed>1</SpinDownSpeed>
+
+            <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+            <DamagedSound>ParticleWeapExpl</DamagedSound>
+            <PressurizeSound>BlockAirVentExhale</PressurizeSound>
+            <DepressurizeSound>BlockAirVentDepressurize</DepressurizeSound>
+            <IdleSound>BlockAirVentIdle</IdleSound>
+            <EmissiveColorPreset>Extended</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <PCU>10</PCU>
+            <DLC>Automatons</DLC>
+        </Definition>
+    </CubeBlocks>
+</Definitions>

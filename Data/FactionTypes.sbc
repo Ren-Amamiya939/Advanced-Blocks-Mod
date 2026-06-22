@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Definition xsi:type="MyObjectBuilder_FactionTypeDefinition">
+        <Id Type="MyObjectBuilder_FactionTypeDefinition" Subtype="Builder" />
+
+        <FactionRatio>10</FactionRatio>
+        <Station_Rule_Min_Orbit>2</Station_Rule_Min_Orbit>
+        <Station_Rule_Max_Orbit>6</Station_Rule_Max_Orbit>
+        <Station_Rule_Min_Outpost>1</Station_Rule_Min_Outpost>
+        <Station_Rule_Max_Outpost>3</Station_Rule_Max_Outpost>
+        <Station_Rule_Min_Station>4</Station_Rule_Min_Station>
+        <Station_Rule_Max_Station>12</Station_Rule_Max_Station>
+
+        <TypeDescription>EconomyFaction_Description_Builder</TypeDescription>
+        <TypeDescriptionVariants>5</TypeDescriptionVariants>
+
+        <Relations>
+            <Relation Faction="Builder" Variant="HostileMin_NeutralMid" />
+            <Relation Faction="Military" Variant="Zero" />
+            <Relation Faction="Pirate" Variant="HostileMin_NeutralMid" />
+        </Relations>
+        <FriendsWith>
+            <Faction>Trader</Faction>
+        </FriendsWith>
+
+        <PreferDeep>true</PreferDeep>
+
+        <OffersList>
+            <ItemId Type="MyObjectBuilder_Datapad" Subtype="Datapad" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="ZoneChip" />
+
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="Welder3Item" />
+            <ItemId Type="MyObjectBuilder_PhysicalGunObject" Subtype="Welder4Item" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Medkit" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="Powerkit" />
+
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Flatbread" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_FruitPastry" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="MealPack_Ramen" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="ClangCola" />
+            <ItemId Type="MyObjectBuilder_ConsumableItem" Subtype="CosmicCoffee" />
+        </OffersList>
+
+        <OrdersList>
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Construction" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="MetalGrid" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="InteriorPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SteelPlate" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Girder" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SmallTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="LargeTube" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Motor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Display" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="BulletproofGlass" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Superconductor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Computer" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Reactor" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Thrust" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="GravityGenerator" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="RadioCommunication" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Detector" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Explosives" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="SolarCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="PowerCell" />
+            <ItemId Type="MyObjectBuilder_Component" Subtype="Canvas" />
+        </OrdersList>
+
+        <GridsForSale>            
+            <PrefabName>Eco_Ship_TIonFade</PrefabName>
+            <PrefabName>Eco_Ship_MiniMerchant</PrefabName>
+            <PrefabName>Eco_Ship_JClassCourier</PrefabName>
+            <PrefabName>Eco_Ship_B60BulkFreighter</PrefabName>
+            <PrefabName>Eco_Ship_AmbassadorExplorer</PrefabName>
+            <PrefabName>Eco_Ship_H2BullwarkHauler</PrefabName>
+            <PrefabName>Eco_Ship_CR2Shrike</PrefabName>
+            <PrefabName>Eco_Ship_BuddyMiner</PrefabName>
+            <PrefabName>Eco_Ship_WaylineSutler</PrefabName>
+            <PrefabName>Eco_Ship_HF3NarrowframeFreighter</PrefabName>
+            <PrefabName>Eco_Ship_RhinoMiner</PrefabName>
+            <PrefabName>Eco_Ship_RST6Salvador</PrefabName>
+            <PrefabName>Eco_Ship_RookGunship</PrefabName>
+            <PrefabName>Eco_Ship_H01Sapper</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk6</PrefabName>
+            <PrefabName>Eco_Ship_R3StartSkiff</PrefabName>
+            <PrefabName>Eco_Ship_H01Prospector</PrefabName>
+            <PrefabName>Eco_Ship_HullBreaker</PrefabName>
+            <PrefabName>Eco_Rover_LunarScoutMk2</PrefabName>
+            <PrefabName>Eco_Ship_CivicHauler</PrefabName>
+            <PrefabName>Eco_Ship_TurtleMiner</PrefabName>
+            <PrefabName>Eco_Ship_KiteMiner</PrefabName>
+            <PrefabName>Eco_Ship_HeavyModuleFreighter</PrefabName>
+            <PrefabName>Eco_Ship_HorizonForge</PrefabName>
+            <PrefabName>Eco_Ship_HaulFrameC</PrefabName>
+            <PrefabName>Eco_Ship_HaulFrameJ</PrefabName>
+            <PrefabName>Eco_Ship_B980Hauler</PrefabName>
+            <PrefabName>Eco_Ship_WardenStrikeCraft</PrefabName>
+            <PrefabName>Eco_Ship_TwinRailDrone</PrefabName>
+            <PrefabName>Eco_Ship_Jackdaw</PrefabName>
+            <PrefabName>Eco_Ship_SnubShip</PrefabName>
+            <PrefabName>Eco_Rover_OR7Gravler</PrefabName>
+            <PrefabName>IMDC - Protos-class Corvette Mk.IV</PrefabName>
+			<PrefabName>IMDC Prometheus Frigate</PrefabName>
+			<PrefabName>IMDC Cerberus Destroyer Mk. III [updated]</PrefabName>
+			<PrefabName>IMDC Titan Cruiser</PrefabName>
+			<PrefabName>Kobura</PrefabName>
+            <PrefabName>Pendragon</PrefabName>
+        </GridsForSale>
+
+        <MaxContractCount>25</MaxContractCount>
+		
+        <CanSellHydrogen>true</CanSellHydrogen>
+		<MinimumOfferGasAmount>5000</MinimumOfferGasAmount>
+		<MaximumOfferGasAmount>45000</MaximumOfferGasAmount>
+
+    </Definition>
+
+</Definitions>

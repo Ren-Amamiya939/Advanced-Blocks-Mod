@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<Model Name="PTIGeneric">
+	<Parameter Name="RescaleFactor">0.01</Parameter>
+	<Parameter Name="RotationY">180</Parameter>
+	<Material Name="Cloth">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="ColorMetalTexture">Textures\Models\Characters\Astronaut\Astronaut_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Characters\Astronaut\Astronaut_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Characters\Astronaut\Astronaut_add.dds</Parameter>
+	</Material>
+	<Material Name="Gear">
+		<Parameter Name="Technique">MESH</Parameter>
+		<Parameter Name="ColorMetalTexture">Textures\Models\Characters\Astronaut\Astronaut_cm.dds</Parameter>
+		<Parameter Name="NormalGlossTexture">Textures\Models\Characters\Astronaut\Astronaut_ng.dds</Parameter>
+		<Parameter Name="AddMapsTexture">Textures\Models\Characters\Astronaut\Astronaut_add.dds</Parameter>
+	</Material>
+	<Material Name="Logo">
+		<Parameter Name="Technique">DECAL_CUTOUT</Parameter>
+		<Parameter Name="ColorMetalTexture">Textures\Custom\RenAmamiya\FactionLogo_cm.dds</Parameter>
+		<Parameter Name="AlphamaskTexture">Textures\Custom\RenAmamiya\FactionLogo_alphamask.dds</Parameter>
+	</Material>
+	<MaterialRef Name="Arms"/>
+	<MaterialRef Name="Astronaut_head"/>
+	<MaterialRef Name="Backpack"/>
+	<MaterialRef Name="Boots"/>
+	<MaterialRef Name="Head"/>
+	<MaterialRef Name="Headlight"/>
+	<MaterialRef Name="LeftGlove"/>
+	<MaterialRef Name="RightArm"/>
+	<MaterialRef Name="RightGlove"/>
+	<MaterialRef Name="Spacesuit_hood"/>
+	<MaterialRef Name="Cloth"/>
+	<MaterialRef Name="Gear"/>
+	<MaterialRef Name="Emissive"/>
+</Model>

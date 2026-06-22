@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <CubeBlocks>
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>LargeAdvancedRefinery</SubtypeId>
+            </Id>
+            <DisplayName>Advanced Refinery</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Prototech_Refinery.dds</Icon>
+            <Description>Description_Prototech_Refinery</Description>
+            <CubeSize>Large</CubeSize>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="2" y="2" z="4" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\Prototech_Refinery.mwm</Model>
+            <Components>
+            <Component Subtype="AlienConstructionKit" Count="20">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="PrototechPanel" Count="560" />
+                <Component Subtype="Construction" Count="60" />
+                <Component Subtype="PrototechMachinery" Count="15">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="PrototechCoolingUnit" Count="10">
+                    <DeconstructId>
+                        <TypeId>Ingot</TypeId>
+                        <SubtypeId>PrototechScrap</SubtypeId>
+                    </DeconstructId>
+                </Component>
+                <Component Subtype="LargeTube" Count="30" />
+                <Component Subtype="MetalGrid" Count="30" />
+                <Component Subtype="Computer" Count="30" />
+                <Component Subtype="PrototechPanel" Count="450" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <Center x="1" y="0" z="1" />
+            <MountPoints>
+                <MountPoint Side="Back" StartX="0" StartY="0.1" EndX="0.1" EndY="1" />
+                <MountPoint Side="Back" StartX="0.1" StartY="0" EndX="1" EndY="0.1" />
+                <MountPoint Side="Back" StartX="1" StartY="0" EndX="2" EndY="1" />
+                <MountPoint Side="Back" StartX="1.9" StartY="1" EndX="2" EndY="1.9" />
+                <MountPoint Side="Back" StartX="1" StartY="1.9" EndX="1.9" EndY="2" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="2" />
+                <MountPoint Side="Front" StartX="1" StartY="0" EndX="2" EndY="1.5" />
+                <MountPoint Side="Front" StartX="1" StartY="1.5" EndX="1.5" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1.8" EndY="2" />
+                <MountPoint Side="Bottom" StartX="0.5" StartY="2" EndX="1.8" EndY="4" />
+                <MountPoint Side="Top" StartX="1" StartY="0" EndX="1.6" EndY="2" />
+                <MountPoint Side="Top" StartX="1.9" StartY="2" EndX="2" EndY="3.85" />
+                <MountPoint Side="Top" StartX="0.5" StartY="3.85" EndX="2" EndY="4" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.15" EndY="1.5" />
+                <MountPoint Side="Left" StartX="0.15" StartY="0" EndX="2" EndY="0.1" />
+                <MountPoint Side="Left" StartX="2" StartY="0.4" EndX="4" EndY="1" />
+                <MountPoint Side="Right" StartX="0" StartY="0.2" EndX="2" EndY="1.5" />
+                <MountPoint Side="Right" StartX="2" StartY="0.2" EndX="4" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Prototech_Refinery_Construction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Prototech_Refinery_Construction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Prototech_Refinery_Construction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>AdvancedRefinery</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>120</BuildTimeSeconds>
+            <DisassembleRatio>5</DisassembleRatio>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>10</InventoryMaxVolume>
+            <InventorySize>
+                <X>5</X>
+                <Y>5</Y>
+                <Z>5</Z>
+            </InventorySize>
+
+            <InventoryFillFactorMin>0.3</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.6</InventoryFillFactorMax>
+
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>2.24</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>AdvIngots</Class>
+            </BlueprintClasses>
+            <RefineSpeed>11</RefineSpeed>
+            <MaterialEfficiency>3.0</MaterialEfficiency>
+            <IngotAmountPerPullRequest>2000</IngotAmountPerPullRequest>
+            <DamageEffectName>Damage_Electrical_Prototech_Large</DamageEffectName>
+            <Center x="1" y="0" z="0" />
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <PrimarySound>BlockRafinery</PrimarySound>
+            <ActionSound>BlockRafineryProcess</ActionSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <MirroringX>HalfZ</MirroringX>
+            <MirroringY>ZHalfZ</MirroringY>
+            <MirroringZ>YHalfZ</MirroringZ>
+            <PCU>90</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <AllowSelfPulling>false</AllowSelfPulling>
+        </Definition>
+
+        <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+            <Id>
+                <TypeId>Refinery</TypeId>
+                <SubtypeId>Blast Furnace</SubtypeId>
+            </Id>
+            <DisplayName>DisplayName_Block_Arc_Furnace</DisplayName>
+            <Icon>Textures\GUI\Icons\Cubes\Blastfurnace.dds</Icon>
+            <Description>Description_RefineryBasic</Description>
+            <CubeSize>Large</CubeSize>
+            <GuiVisible>false</GuiVisible>
+            <BlockTopology>TriangleMesh</BlockTopology>
+            <Size x="1" y="2" z="1" />
+            <ModelOffset x="0" y="0" z="0" />
+            <Model>Models\Cubes\Large\BasicRefinery.mwm</Model>
+            <Components>
+                <Component Subtype="SteelPlate" Count="100" />
+                <Component Subtype="Construction" Count="20" />
+                <Component Subtype="Motor" Count="10" />
+                <Component Subtype="Computer" Count="10" />
+                <Component Subtype="SteelPlate" Count="20" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <MountPoints>
+                <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+                <MountPoint Side="Top" StartX="0" StartY="0.6" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Left" StartX="0" StartY="1" EndX="0.4" EndY="2" />
+                <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Right" StartX="0.6" StartY="1" EndX="1" EndY="2" />
+                <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+                <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="2" />
+            </MountPoints>
+            <BuildProgressModels>
+                <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\BasicRefineryConstruction_1.mwm" />
+                <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\BasicRefineryConstruction_2.mwm" />
+                <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\BasicRefineryConstruction_3.mwm" />
+            </BuildProgressModels>
+            <BlockPairName>Blast Furnace</BlockPairName>
+            <EdgeType>Light</EdgeType>
+            <BuildTimeSeconds>40</BuildTimeSeconds>
+            <ResourceSinkGroup>Factory</ResourceSinkGroup>
+            <InventoryMaxVolume>4</InventoryMaxVolume>
+            <InventorySize>
+                <X>2</X>
+                <Y>2</Y>
+                <Z>2</Z>
+            </InventorySize>
+
+            <InventoryFillFactorMin>0.3</InventoryFillFactorMin>
+            <InventoryFillFactorMax>0.6</InventoryFillFactorMax>
+
+            <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
+            <OperationalPowerConsumption>0.33</OperationalPowerConsumption>
+            <BlueprintClasses>
+                <Class>BasicIngots</Class>
+            </BlueprintClasses>
+            <RefineSpeed>0.5</RefineSpeed>
+            <MaterialEfficiency>0.5</MaterialEfficiency>
+            <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+            <DamagedSound>ParticleHeavyMech</DamagedSound>
+            <PrimarySound>BlockRafinery</PrimarySound>
+            <ActionSound>BlockRafineryProcess</ActionSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
+            <DestroySound>WepSmallWarheadExpl</DestroySound>
+            <OreAmountPerPullRequest>2000</OreAmountPerPullRequest>
+            <PCU>75</PCU>
+            <TieredUpdateTimes>
+                <unsignedInt>60</unsignedInt>
+                <unsignedInt>120</unsignedInt>
+                <unsignedInt>240</unsignedInt>
+            </TieredUpdateTimes>
+            <AllowSelfPulling>false</AllowSelfPulling>
+        </Definition>
+	</CubeBlocks>
+</Definitions>

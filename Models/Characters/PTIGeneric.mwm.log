@@ -1,0 +1,80 @@
+Running from: C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters 
+Command: D:\SE Modding\Assets\Tools\MWMBuilder\MwmBuilder.exe /f /s:C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters /m:PTIGeneric*.fbx /o:C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters /x:D:\SE Modding\Assets\Materials 
+D:\SE Modding\Assets\Materials\Armors.xml: 
+    Materialslib
+D:\SE Modding\Assets\Materials\Character.xml: 
+    Materialslib
+D:\SE Modding\Assets\Materials\enenra.xml: 
+    Materialslib
+D:\SE Modding\Assets\Materials\Foliage.xml: 
+    Materialslib
+D:\SE Modding\Assets\Materials\Items.xml: 
+    Materialslib
+D:\SE Modding\Assets\Materials\LODs.xml: 
+    Materialslib
+D:\SE Modding\Assets\Materials\Materials.xml: 
+    Materialslib
+D:\SE Modding\Assets\Materials\PlayerItems.xml: 
+    Materialslib
+D:\SE Modding\Assets\Materials\Voxels.xml: 
+    Materialslib
+Material Libraries: 
+    Material libraries were successfully loaded from path: D:\SE Modding\Assets\Materials
+: 
+    **FileName: C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters\PTIGeneric.fbx
+: 
+    **Filename (without extension): PTIGeneric
+: 
+    **Directory Name: C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters
+: 
+    **Number of characters to cull: 77
+: 
+    **Culled Path: Models\Characters
+Meshes: 
+    Found 15 meshe(s).
+Animations: 
+    Found 0 animation(s).
+: WARNING: 
+    Assimp.Meshhas UV with 3 identical vectors in a row, this likely means you have a face with an UV is 0-size which will cause SE to make the entire model shaderless.
+: WARNING: 
+    Assimp.Meshhas UV with 3 identical vectors in a row, this likely means you have a face with an UV is 0-size which will cause SE to make the entire model shaderless.
+C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters\PTIGeneric.fbx: WARNING: 
+    Material: Gear is already defined in the processor. Not adding it again..
+C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters\PTIGeneric.fbx: WARNING: 
+    Material: Cloth is already defined in the processor. Not adding it again..
+: 
+    Processing Vertex Bone Weights for Mesh: 1
+: 
+    Processing Vertex Bone Weights for Mesh: 2
+: 
+    Processing Vertex Bone Weights for Mesh: 3
+: 
+    Processing Vertex Bone Weights for Mesh: 4
+: 
+    Processing Vertex Bone Weights for Mesh: 5
+: 
+    Processing Vertex Bone Weights for Mesh: 6
+: 
+    Processing Vertex Bone Weights for Mesh: 7
+: 
+    Processing Vertex Bone Weights for Mesh: 8
+: 
+    Processing Vertex Bone Weights for Mesh: 9
+: 
+    Processing Vertex Bone Weights for Mesh: 10
+: 
+    Processing Vertex Bone Weights for Mesh: 11
+: 
+    Processing Vertex Bone Weights for Mesh: 12
+: 
+    Processing Vertex Bone Weights for Mesh: 13
+: 
+    Processing Vertex Bone Weights for Mesh: 14
+: 
+    Processing Vertex Bone Weights for Mesh: 15
+C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters\PTIGeneric.fbx: WARNING: 
+    Model contains degenerated triangle (indices 15394 15393 15392)
+C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters\PTIGeneric.fbx: WARNING: 
+    Model contains degenerated triangle (indices 15499 15498 15497)
+C:\Users\Rees\AppData\Roaming\SpaceEngineers\Mods\PTI - Advanced Blocks v9.1\Models\Characters\PTIGeneric.fbx: 
+    : Finished in 0.4s
