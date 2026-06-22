@@ -113,9 +113,9 @@
         <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
             <Id>
                 <TypeId>Refinery</TypeId>
-                <SubtypeId>Blast Furnace</SubtypeId>
+                <SubtypeId>Crusher</SubtypeId>
             </Id>
-            <DisplayName>DisplayName_Block_Arc_Furnace</DisplayName>
+            <DisplayName>Crusher</DisplayName>
             <Icon>Textures\GUI\Icons\Cubes\Blastfurnace.dds</Icon>
             <Description>Description_RefineryBasic</Description>
             <CubeSize>Large</CubeSize>
@@ -125,11 +125,11 @@
             <ModelOffset x="0" y="0" z="0" />
             <Model>Models\Cubes\Large\BasicRefinery.mwm</Model>
             <Components>
+                <Component Subtype="SteelPlate" Count="500" />
+                <Component Subtype="Construction" Count="100" />
+                <Component Subtype="Motor" Count="50" />
+                <Component Subtype="Computer" Count="50" />
                 <Component Subtype="SteelPlate" Count="100" />
-                <Component Subtype="Construction" Count="20" />
-                <Component Subtype="Motor" Count="10" />
-                <Component Subtype="Computer" Count="10" />
-                <Component Subtype="SteelPlate" Count="20" />
             </Components>
             <CriticalComponent Subtype="Computer" Index="0" />
             <MirroringZ>Y</MirroringZ>
@@ -149,7 +149,7 @@
                 <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\BasicRefineryConstruction_2.mwm" />
                 <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\BasicRefineryConstruction_3.mwm" />
             </BuildProgressModels>
-            <BlockPairName>Blast Furnace</BlockPairName>
+            <BlockPairName>Ingot Furnace</BlockPairName>
             <EdgeType>Light</EdgeType>
             <BuildTimeSeconds>40</BuildTimeSeconds>
             <ResourceSinkGroup>Factory</ResourceSinkGroup>
@@ -164,9 +164,9 @@
             <InventoryFillFactorMax>0.6</InventoryFillFactorMax>
 
             <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
-            <OperationalPowerConsumption>0.33</OperationalPowerConsumption>
+            <OperationalPowerConsumption>0.9</OperationalPowerConsumption>
             <BlueprintClasses>
-                <Class>BasicIngots</Class>
+                <Class>BasicModIngots</Class>
             </BlueprintClasses>
             <RefineSpeed>0.5</RefineSpeed>
             <MaterialEfficiency>0.5</MaterialEfficiency>
