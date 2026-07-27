@@ -27,7 +27,23 @@
             <FocusIcon>Textures\GUI\Icons\ingot\ingot_class_focus.dds</FocusIcon>
             <InputConstraintIcon>Textures\GUI\Icons\filter_ore.dds</InputConstraintIcon>
             <OutputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</OutputConstraintIcon>
-        </Class>>
+        </Class>
+
+        <Class>
+			<Id>
+				<TypeId>BlueprintClassDefinition</TypeId>
+				<SubtypeId>PrototechComponents</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_BlueprintClass_PrototechComponents</DisplayName>
+			<Description>Description_BlueprintClass_PrototechComponents</Description>
+			<Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
+			<FocusIcon>Textures\GUI\Icons\buttons\component.dds</FocusIcon>
+			<HighlightIcon>Textures\GUI\Icons\buttons\component_focus.dds</HighlightIcon>
+			<InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+			<OutputConstraintIcon>Textures\GUI\Icons\FilterComponent.dds</OutputConstraintIcon>
+			<InputConstraintDescription>ToolTipItemFilter_AssemblerInput</InputConstraintDescription>
+			<OutputConstraintDescription>ToolTipItemFilter_GenericProductionBlockOutput</OutputConstraintDescription>
+		</Class>
 	</BlueprintClasses>
 
 	<BlueprintClassEntries>
@@ -45,6 +61,8 @@
         <Entry Class="AdvIngots" BlueprintSubtypeId="ScrapToIronIngot" />
 
         <Entry Class="BasicModIngots" BlueprintSubtypeId="BasicStoneOreToIngot" />
+
+        <Entry Class="PrototechComponents" BlueprintSubtypeId="AlienConstructionKitCraft" />
         
 	</BlueprintClassEntries>
 </Definitions>

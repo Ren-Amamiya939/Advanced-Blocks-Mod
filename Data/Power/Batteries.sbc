@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <CubeBlocks>
-        <Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
+        <!--<Definition xsi:type="MyObjectBuilder_BatteryBlockDefinition">
             <Id>
                 <TypeId>BatteryBlock</TypeId>
                 <SubtypeId>AdvLargeBlockBatteryBlock</SubtypeId>
@@ -190,6 +190,6 @@
             <TargetingGroups>
                 <string>PowerSystems</string>
             </TargetingGroups>
-        </Definition>
+        </Definition>!-->
 	</CubeBlocks>
 </Definitions>

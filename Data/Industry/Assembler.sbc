@@ -78,10 +78,10 @@
             <StandbyPowerConsumption>0.001</StandbyPowerConsumption>
             <OperationalPowerConsumption>8</OperationalPowerConsumption>
             <BlueprintClasses>
-                <Class>PrototechComponents</Class>
                 <Class>LargeBlocks</Class>
                 <Class>SmallBlocks</Class>
                 <Class>Components</Class>
+                <Class>PrototechComponents</Class>
                 <Class>EliteEquipment</Class>
                 <Class>EliteTools</Class>
 				<Class>EliteWeapons</Class>

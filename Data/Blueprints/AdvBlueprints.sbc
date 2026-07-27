@@ -59,7 +59,7 @@
                 <SubtypeId>AlienConstructionKitCraft</SubtypeId>
             </Id>
             <DisplayName>Alien Construction Kit</DisplayName>
-            <Icon>Textures\GUI\Icons\ingot\ingot_class.dds</Icon>
+            <Icon>Textures\GUI\Icons\component\construction_components_component.dds</Icon>
             <Prerequisites>
                 <Item Amount="4" TypeId="Ingot" SubtypeId="PrototechScrap" />
                 <Item Amount="120" TypeId="Ingot" SubtypeId="Iron" />

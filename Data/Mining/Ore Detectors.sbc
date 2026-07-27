@@ -15,12 +15,12 @@
             <ModelOffset x="0" y="0" z="0" />
             <Model>Models\Cubes\Large\OreDetector.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="30" />
-                <Component Subtype="Construction" Count="40" />
-                <Component Subtype="Motor" Count="5" />
-                <Component Subtype="Computer" Count="25" />
-                <Component Subtype="Detector" Count="20" />
-                <Component Subtype="SteelPlate" Count="20" />
+                <Component Subtype="SteelPlate" Count="90" />
+                <Component Subtype="Construction" Count="120" />
+                <Component Subtype="Motor" Count="15" />
+                <Component Subtype="Computer" Count="75" />
+                <Component Subtype="Detector" Count="60" />
+                <Component Subtype="SteelPlate" Count="60" />
             </Components>
             <CriticalComponent Subtype="Detector" Index="0" />
             <Center x="0" y="0" z="1" />
@@ -64,12 +64,12 @@
             <ModelOffset x="0" y="0" z="0" />
             <Model>Models\Cubes\Small\OreDetector.mwm</Model>
             <Components>
-                <Component Subtype="SteelPlate" Count="1" />
-                <Component Subtype="Construction" Count="2" />
-                <Component Subtype="Motor" Count="1" />
-                <Component Subtype="Computer" Count="1" />
-                <Component Subtype="Detector" Count="1" />
-                <Component Subtype="SteelPlate" Count="2" />
+                <Component Subtype="SteelPlate" Count="3" />
+                <Component Subtype="Construction" Count="6" />
+                <Component Subtype="Motor" Count="3" />
+                <Component Subtype="Computer" Count="3" />
+                <Component Subtype="Detector" Count="3" />
+                <Component Subtype="SteelPlate" Count="6" />
             </Components>
             <CriticalComponent Subtype="Detector" Index="0" />
             <Center x="0" y="0" z="1" />

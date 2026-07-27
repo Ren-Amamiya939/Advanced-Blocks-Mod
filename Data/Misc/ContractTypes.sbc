@@ -427,8 +427,8 @@
             <Icon>Textures\GUI\Icons\Contracts\AcquisitionContractHeader.dds</Icon>
             <MinimumReputation>85</MinimumReputation>
             <FailReputationPrice>0</FailReputationPrice>
-            <MinimumMoney>100000</MinimumMoney>
-            <DurationMultiplier>2</DurationMultiplier>
+            <MinimumMoney>1000000</MinimumMoney>
+            <DurationMultiplier>5</DurationMultiplier>
 
             <MinReputationRequirement>-1500</MinReputationRequirement>
 
@@ -595,8 +595,8 @@
             <Icon>Textures\GUI\Icons\Contracts\AcquisitionContractHeader.dds</Icon>
             <MinimumReputation>120</MinimumReputation>
             <FailReputationPrice>0</FailReputationPrice>
-            <MinimumMoney>500000</MinimumMoney>
-            <DurationMultiplier>3</DurationMultiplier>
+            <MinimumMoney>50000000</MinimumMoney>
+            <DurationMultiplier>10</DurationMultiplier>
 
             <MinReputationRequirement>-1500</MinReputationRequirement>
             <ItemAmountDifficultyMultiplier>50</ItemAmountDifficultyMultiplier>
